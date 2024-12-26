@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sri Gnan Mandir-Eral</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, rgb(255, 102, 0), rgb(255, 208, 0));
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #f700ff;
+        }
+
+        .navbar .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none;
+                flex-direction: column;
+                background-color: #036d5b;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                width: 150px;
+                border-radius: 5px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                z-index: 100;
+                text-align: center;
+            }
+            .navbar ul li a:hover {
+            color: #ff00d4;
+        }
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .navbar ul.active {
+                display: flex;
+            }
+
+            .navbar .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Sri Sri Gnan Mandir-Eral</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="cotact.html">Contact</a></li>
+            <li><a href="">student info</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </div>
+
+    <script>
+        // Toggle menu for smaller screens
+        const menuIcon = document.getElementById('menu-icon');
+        const navbarMenu = document.querySelector('.navbar ul');
+
+        menuIcon.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+
+
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 500%;
+      margin: 20px auto;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px){
+        .slider{
+            max-width: 500px;
+        }
+        
+    }
+    .slides {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+    .slides img {
+      width: 100%;
+      height: 400px; /* Fixed height for all images */
+      object-fit: cover; /* Ensure images maintain aspect ratio */
+      border: 2px solid white;
+    }
+    .navigation {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      transform: translateY(-50%);
+    }
+    .navigation button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .dots {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .dots button {
+      height: 10px;
+      width: 10px;
+      margin: 5px;
+      background-color: #ccc;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .dots .active {
+      background-color: #333;
+    }
+    #box1{
+        
+        height: 150px;
+        margin-top:15px ;
+        border: 2px solid black;
+        text-align: center;
+        background-color:rgb(221, 102, 4);
+        color: #f4f4f4;
+        box-shadow: 0px 0px 15px #333;
+        border-radius: 10%;
+    }
+    .box3{
+      height: 300px;
+      width: 25vw;
+      border: 2px solid black;
+      display:inline-flex;
+      margin-left: 4vw;
+      
+      margin-top: 20px;
+      box-shadow: 0px 0px 10px blue;
+      border-radius: 20px;
+    }
+    @media (max-width: 768px){
+      .box3{
+        display: block;
+        width: 90vw;
+      }
+    }
+        
+    
+  
+    #robi{
+        height: 5cm;
+        width: 4cm;
+        overflow: hidden;
+        margin: auto;
+        border-radius: 20%;
+        border: 3px solid black;
+        box-shadow: 0px 0px 20px ;
+        margin-top: 10px;
+
+    }
+    #robi img{
+        height: 100%;
+        width: 100%;
+        background: cover;
+        
+    }
+    
+  </style>
+</head>
+<body style="background-color: #e37c0636;">
+  <div class="banar1"><div class="banar"><img src="school img/image.png" alt="" loading="lazy"></div></div>
+  <style>
+    .banar1{
+      margin-top: 8px;
+      padding-left: 36%;
+      background-color: brown;
+
+    }
+    .banar{
+      overflow: hidden;
+      height: 200px;
+      width: 500px;
+      display:inline-block;
+    }
+    .banar img {
+      
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 768px){
+      .banar{
+      overflow: hidden;
+      height: 100px;
+      width: 250px;
+      display:inline-block;
+    }
+    .banar1{
+      margin-top: 8px;
+      padding-left: 21%;
+      background-color: brown;
+
+    }
+    }
+  
+  </style>
+    <!-- 5:4 image -->
+
+  <div class="slider">
+    <div class="slides">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.41_24c7f88c.jpg" alt="Image 1">
+      <img src="school img/p2.JPG" alt="Image 2">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_c2f9cad6.jpg" alt="Image 3">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.43_84b85c5f.jpg" alt="Image 4">
+      <img src="school img/p3.jpg" alt="Image 2">
+      <!-- c -->
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.41_24c7f88c.jpg" alt="Image 1">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_308d1d16.jpg" alt="Image 2">
+      <img src="school img/p3.jpg" alt="Image 3">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.43_84b85c5f.jpg" alt="Image 4">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_308d1d16.jpg" alt="Image 2">
+      <img src="school img/robi.jpg" alt="Image 1">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_308d1d16.jpg" alt="Image 2">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_c2f9cad6.jpg" alt="Image 3">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.43_84b85c5f.jpg" alt="Image 4">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_308d1d16.jpg" alt="Image 2">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.41_24c7f88c.jpg" alt="Image 1">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_308d1d16.jpg" alt="Image 2">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_c2f9cad6.jpg" alt="Image 3">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.43_84b85c5f.jpg" alt="Image 4">
+      <img src="school img/WhatsApp Image 2024-12-13 at 12.19.42_308d1d16.jpg" alt="Image 2">
+      
+    </div>
+    <div class="navigation">
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
+  </div>
+
+  <div class="dots">
+    <button class="dot"></button>
+    <button class="dot"></button>
+    <button class="dot"></button>
+    <button class="dot"></button>
+    <button class="dot"></button>
+  </div>
+  <div id="robi" ><img src="school img/robi.jpg" alt=""></div>
+  <div id="box1">
+    <h3>-:NOTICE:-</h3>
+    <P>Our school admissions processes are started please hurry up</P><br>
+    <a href="studen_login.php">
+
+        <div style="margin: auto;height: 1cm; width: 3cm; background-color: darkblue; border-radius: 5%; text-align:center ;color: #f4f4f4;"><h4 style="padding-top: 12px;">Click here</h4></div>
+    </a>
+  </div>
+  <div id="main">
+  <div class="parent">
+    <div  id="top1"><h2>Teacher details</h2></div>
+    <div class="child"><div class="po"><img src="techer.img/image1.png" alt="" loading="lazy"></div><h4><strong>Anita Rani Ojha Kar</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image2.png" alt="" loading="lazy"></div><h4><strong>Aparna Maiti</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image3.png" alt=""  loading="lazy"></div><h4><strong>Bibhas Chandra Rana</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image4.png" alt=""  loading="lazy"></div><h4><strong>Bulti Bag</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image5.png" alt="" loading="lazy"></div><h4><strong>Ganesh Chandra Das Adhikari</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image6.png" alt="" loading="lazy"></div><h4><strong>Goutam Das Adhikari</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image7.png" alt=""></div><h4><strong>Kalyani Ghorai Jana</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image8.png" alt="" loading="lazy"></div><h4><strong>	Laltu Bhanja</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image9.png" alt="" loading="lazy"></div><h4><strong>Mahua Bhowmik Pal</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image10.png" alt="" loading="lazy"></div><h4><strong>Malati Rani Pandit</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image11.png" alt="" loading="lazy"></div><h4><strong></strong></h4>Manas Kumar Samanta</div>
+    <div class="child"><div class="po"><img src="techer.img/image12.png" alt="" loading="lazy"></div><h4><strong>Prasenjit Mandal</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image13.png" alt="" loading="lazy"></div><h4><strong>	Rupali Chakraborty</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image14.png" alt="" loading="lazy"></div><h4><strong>Subrata Samanta</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image15.png" alt="" loading="lazy"></div><h4><strong>Sucharita Adak</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image16.png" alt="" loading="lazy"></div><h4><strong>	Sudip Raul</strong></h4></div>
+    <div class="child"><div class="po"><img src="techer.img/image17.png" alt="" loading="lazy"></div><h4><strong>Swapan Manna</strong></h4></div>
+    
+    
+
+  </div>
+  <div class="parent" id="milon_para" ><div id="milon"><img src="school img/WhatsApp Image 2024-12-24 at 09.17.57_2c098f6b.jpg" alt="" loading="lazy"></div><br><br><h2>সম্পাদকের কলমে
+  </h2><p>১৯৮৭ সালে আমার প্রাণ এড়াল এর দক্ষিণ পল্লির কয়েকজন যুবকদের সাথে নিয়ে এড়াল ইন্দিরা ক্লাব নামে একটি স্বেচ্ছাসেবী সংগঠন তৈরি করলাম। আমি তখন সেনাবাহিনী বিভাগে কর্মরত। ১৯৯১ সালে রামকৃষ্ণ মিশন লোক পরিষদ-এর অনুমোদন নিয়ে স্বাস্থ্যবিধান কর্মসূচি, শিশুশিক্ষা কেন্দ্র ও ব্রতচারী কর্মসূচি রূপায়ণের কাজ শুরু করা হল। ২০০৪ সালে আমি বিভাগ থেকে অবসর গ্রহণ করে বাড়ি ফিরে এলাম। লক্ষ্য করলাম দারিদ্র্য ও সচেতনতার অভাবে শিশুরা শিক্ষালাভ থেকে বঞ্চিত হচ্ছে ক্লাবের বরিষ্ঠ সদস্য শ্রী বিষ্ণুপদ মেই কাপ মহাশয়ের নেতৃত্বে শুরু হল 'ফ্রি কোচিং সেন্টার' । ২০০৭ সালে অরুণ ঘোম নামে এক সুহৃদয় ব্যক্তির সাথে যোগাযোগ পরম পূজ্যপাদ গুরুজি শ্রীশ্রী রবিশঙ্করজীর প্রতিষ্ঠিত "THE ART OF LIVING" নামে একটি আন্তর্জাতিক সংস্থার সাথে আমাদের মেলবন্ধন হয়। শুরু করলাম ট্রেনিং কোর্স। এই ট্রেনিং থেকে জানতে পারলাম শিক্ষাই কেবল মানুষকে পূর্ণত্ব দান করতে পারে। গুরুজির আশীর্বাদ নিয়ে ২০১০ সালে চালু করলাম "শ্রীশ্রী জ্ঞান মন্দির- এড়াল" নামে বিদ্যালয় । অনুমোদন পেলাম বিশ্ব শান্তির দূত শ্রীশ্রী রবিশঙ্করজীর 'বেদ বিজ্ঞান মহাপীঠ' নামক প্রতিষ্ঠানের। গতানুগতিক শিক্ষাপদ্ধতি থেকে বেরিয়ে এসে প্রেম, ভক্তি, মানবর্তাযুক্ত শিক্ষা ব্যবস্থা। ২০১০ সালে যাত্রা ৬০ জন শিশুকে নিয়ে এই কার্যক্রম শুরু করি। বেদবিজ্ঞান মহা বিদ্যাপীঠ, এর সহযোগিতা ২০২৩ সালে ২৪৫ জন ছাত্র-ছাত্রী এই বিদ্যালয়ে পাঠরও।
+
+    এই বিদ্যালয়টিকে সুন্দর ও বড় করে তোলার অভিলাষ আমাদের রয়েছে। সেইজন্য প্রয়োজন আপামর জনসাধারণের ঐকান্তিক সহযোগিতা। আশাকরি সহৃদয় ব্যক্তিগণ আমাদের এই কাজে সহযোগিতা করবেন।<br><br>
+    
+    THE SUPREME FORM OF PRAYER IS
+    
+    THAT WHICH ARISES IN JOY <br>
+    
+    - Gurudev Sri Sri Ravi Sankar</p></div>
+  <div class="parent">
+    <div class="child1" style="background-color: purple;border-radius: 0px ;"><h2>-:OUR FACILITIES:-</h2></div>
+    <div class="child1"><strong>Free Books</strong></div>
+    <div class="child1"><strong>Free Dreses</strong></div>
+    <div class="child1"><strong>Free Bag</strong></div>
+    <div class="child1"><strong>Hostel facility</strong></div>
+    <div class="child1"><strong>Free Shoes</strong></div>
+    <div class="child1"><strong>Free Mid-day-meal</strong></div>
+  <div class="child1"><strong> LKG to CLASS X</strong></div>
+  <div class="child1"><strong>Computer Class</strong></div>
+  <div class="child1"><strong>Yoga & Pranayan Class</strong></div>
+  <div class="child1"><strong>Maditation Class</strong></div>
+  <div class="child1"><strong>P.T.Class</strong></div>
+  <div class="child1"><strong>Cultural Class</strong></div>
+  <div class="child1"><strong>Online spoken English Class</strong></div>
+  <div class="child1"><strong>Student Transport</strong></div>
+  
+  </div>
+
+  </div>
+
+  <!-- for mobil midia  -->
+  <div id="main1">
+    <div class="parent" id="milon_para" ><div id="milon"><img src="school img/WhatsApp Image 2024-12-24 at 09.17.57_2c098f6b.jpg" alt=""></div><br><h2>সম্পাদকের কলমে
+    </h2><p>১৯৮৭ সালে আমার প্রাণ এড়াল এর দক্ষিণ পল্লির কয়েকজন যুবকদের সাথে নিয়ে এড়াল ইন্দিরা ক্লাব নামে একটি স্বেচ্ছাসেবী সংগঠন তৈরি করলাম। আমি তখন সেনাবাহিনী বিভাগে কর্মরত। ১৯৯১ সালে রামকৃষ্ণ মিশন লোক পরিষদ-এর অনুমোদন নিয়ে স্বাস্থ্যবিধান কর্মসূচি, শিশুশিক্ষা কেন্দ্র ও ব্রতচারী কর্মসূচি রূপায়ণের কাজ শুরু করা হল। ২০০৪ সালে আমি বিভাগ থেকে অবসর গ্রহণ করে বাড়ি ফিরে এলাম। লক্ষ্য করলাম দারিদ্র্য ও সচেতনতার অভাবে শিশুরা শিক্ষালাভ থেকে বঞ্চিত হচ্ছে ক্লাবের বরিষ্ঠ সদস্য শ্রী বিষ্ণুপদ মেই কাপ মহাশয়ের নেতৃত্বে শুরু হল 'ফ্রি কোচিং সেন্টার' । ২০০৭ সালে অরুণ ঘোম নামে এক সুহৃদয় ব্যক্তির সাথে যোগাযোগ পরম পূজ্যপাদ গুরুজি শ্রীশ্রী রবিশঙ্করজীর প্রতিষ্ঠিত "THE ART OF LIVING" নামে একটি আন্তর্জাতিক সংস্থার সাথে আমাদের মেলবন্ধন হয়। শুরু করলাম ট্রেনিং কোর্স। এই ট্রেনিং থেকে জানতে পারলাম শিক্ষাই কেবল মানুষকে পূর্ণত্ব দান করতে পারে। গুরুজির আশীর্বাদ নিয়ে ২০১০ সালে চালু করলাম "শ্রীশ্রী জ্ঞান মন্দির- এড়াল" নামে বিদ্যালয় । অনুমোদন পেলাম বিশ্ব শান্তির দূত শ্রীশ্রী রবিশঙ্করজীর 'বেদ বিজ্ঞান মহাপীঠ' নামক প্রতিষ্ঠানের। গতানুগতিক শিক্ষাপদ্ধতি থেকে বেরিয়ে এসে প্রেম, ভক্তি, মানবর্তাযুক্ত শিক্ষা ব্যবস্থা। ২০১০ সালে যাত্রা ৬০ জন শিশুকে নিয়ে এই কার্যক্রম শুরু করি। বেদবিজ্ঞান মহা বিদ্যাপীঠ, এর সহযোগিতা ২০২৩ সালে ২৪৫ জন ছাত্র-ছাত্রী এই বিদ্যালয়ে পাঠরও।
+  
+      এই বিদ্যালয়টিকে সুন্দর ও বড় করে তোলার অভিলাষ আমাদের রয়েছে। সেইজন্য প্রয়োজন আপামর জনসাধারণের ঐকান্তিক সহযোগিতা। আশাকরি সহৃদয় ব্যক্তিগণ আমাদের এই কাজে সহযোগিতা করবেন।<br><br>
+      
+      THE SUPREME FORM OF PRAYER IS
+      
+      THAT WHICH ARISES IN JOY <br>
+      
+      - Gurudev Sri Sri Ravi Sankar</p></div>
+    <div class="parent">
+      <div class="child1" style="background-color: purple;border-radius: 0px ;"><h2>-:OUR FACILITIES:-</h2></div>
+      <div class="child1"><strong>Free Books</strong></div>
+      <div class="child1"><strong>Free Dress</strong></div>
+      <div class="child1"><strong>Free Bags</strong></div>
+      <div class="child1"><strong>Free Shoes</strong></div>
+      <div class="child1"><strong>Free Mid-day-meal</strong></div>
+      <div class="child1"><strong>Hostel facility</strong></div>
+    <div class="child1"><strong> LKG to CLASS X</strong></div>
+    <div class="child1"><strong>Computer Class</strong></div>
+    <div class="child1"><strong>Yoga & Pranayam Class</strong></div>
+    <div class="child1"><strong>Maditation Class</strong></div>
+    <div class="child1"><strong>P.T.Cslass</strong></div>
+    <div class="child1"><strong>Cultural Classes</strong></div>
+    <div class="child1"><strong>Online spoken English Class</strong></div>
+    <div class="child1"><strong>Student Transport</strong></div>
+    
+    </div>
+    <div class="parent">
+      <div  id="top1"><h2>Teacher details</h2></div>
+      <div class="child"><div class="po"><img src="techer.img/image1.png" alt="" loading="lazy"></div><h4><strong>Anita Rani Ojha Kar</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image2.png" alt="" loading="lazy"></div><h4><strong>Aparna Maiti</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image3.png" alt=""  loading="lazy"></div><h4><strong>Bibhas Chandra Rana</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image4.png" alt=""  loading="lazy"></div><h4><strong>Bulti Bag</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image5.png" alt="" loading="lazy"></div><h4><strong>Ganesh Chandra Das Adhikari</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image6.png" alt="" loading="lazy"></div><h4><strong>Goutam Das Adhikari</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image7.png" alt=""></div><h4><strong>Kalyani Ghorai Jana</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image8.png" alt="" loading="lazy"></div><h4><strong>	Laltu Bhanja</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image9.png" alt="" loading="lazy"></div><h4><strong>Mahua Bhowmik Pal</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image10.png" alt="" loading="lazy"></div><h4><strong>Malati Rani Pandit</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image11.png" alt="" loading="lazy"></div><h4><strong></strong></h4>Manas Kumar Samanta</div>
+      <div class="child"><div class="po"><img src="techer.img/image12.png" alt="" loading="lazy"></div><h4><strong>Prasenjit Mandal</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image13.png" alt="" loading="lazy"></div><h4><strong>	Rupali Chakraborty</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image14.png" alt="" loading="lazy"></div><h4><strong>Subrata Samanta</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image15.png" alt="" loading="lazy"></div><h4><strong>Sucharita Adak</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image16.png" alt="" loading="lazy"></div><h4><strong>	Sudip Raul</strong></h4></div>
+      <div class="child"><div class="po"><img src="techer.img/image17.png" alt="" loading="lazy"></div><h4><strong>Swapan Manna</strong></h4></div>
+    </div>
+      
+  
+  </div>
+  <style>
+    #main{
+      display:inline-flex;
+      /* gap: 500px; */
+      margin-top: 30px;
+      
+    }
+    #milon_para{
+      text-align: center;
+      font-size: 1.5vw;
+      background-color: plum;
+    }
+      #main1{
+        display: none;
+      }
+      #milon{
+        height: 500px;
+        width: 78%;
+        
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        
+      }
+      #milon img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .parent {
+        /* display: inline; */
+        flex-wrap: wrap; /* Allow child divs to wrap onto next row if necessary */
+        justify-content: space-between; /* Space out the divs evenly */
+        width: 33vw;
+        
+        border: 2px solid rgb(236, 233, 236);
+      }
+      @media (max-width: 768px){
+        #main{
+          display: none;
+          
+        }
+        #main1{
+          display: inline;
+        }
+        .parent{
+          width: 100vw;
+        }
+        #milon_para{
+          font-size:10px;
+        }
+        #milon{
+          height: 200px;
+          width: 200px;
+        }
+      }
+    .child {
+    
+    
+      background-image: linear-gradient(to bottom right, darkblue, rgba(0, 255, 242, 0.966)); /* Green background */
+      color: white;
+      text-align: center;
+      padding: 10px;
+      padding-top: 17px;
+       /* 10% width for 10 items with some margin space */
+      margin: 5px;
+      border-radius: 5px;
+      box-sizing: border-box; /* Ensures padding is included in width calculation */
+    }
+    .child1{
+      background-color: #3f9c14;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      padding-top: 17px;
+       /* 10% width for 10 items with some margin space */
+      margin: 5px;
+      border-radius: 50px  50px  50px  50px;
+      box-sizing: border-box;
+      height: 50px;
+
+    }
+    .po{
+      
+      height: 60px;
+      width: 60px;
+      border-radius: 50px;
+      border: 2px solid white;
+      display: inline-block;
+      overflow: hidden;
+      
+      
+    }
+    .po img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+   #top1{
+    background-color: gray;
+    text-align: center;
+    height: 40px;
+   }
+    </style>
+  
+  
+  <script>
+    const slides = document.querySelector('.slides');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = dots.length;
+    let currentIndex = 0;
+
+    function updateSlider(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlider(currentIndex);
+    }
+
+    // Dot navigation
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        currentIndex = i;
+        updateSlider(currentIndex);
+      });
+    });
+
+    // Next and previous buttons
+    document.getElementById('next').addEventListener('click', nextSlide);
+    document.getElementById('prev').addEventListener('click', prevSlide);
+
+    // Automatic sliding every 3 seconds
+    setInterval(nextSlide, 3000);
+  </script>
+
+
+
+
+
+</body>
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>About Our School</h2>
+      <p>Dedicated to nurturing young minds, our school fosters academic excellence and personal growth in a supportive environment.</p>
+    </div>
+
+    <div class="footer-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/admissions">Admissions</a></li>
+        <li><a href="/academics">Academics</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <a href="mailto:ssgmeral2025@gmail.com" style="color: white;">Email: ssgmeral2025@gmail.com</a>
+      <p>Phone: +91 9475329274</p>
+      <p>Address: Sri Sri Gnan Mandir Eral, Uttra Eral, Sabang,Pachim medinipur,pin-721144</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+  
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .footer-about, .footer-links, .footer-contact {
+    flex: 1;
+    margin: 10px 20px;
+  }
+  .footer-about p, .footer-contact p {
+    line-height: 1.6;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-links ul li {
+    margin: 8px 0;
+  }
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover {
+    color: #1abc9c;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+  }
+</style>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Staff List</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        /* body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        } */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, rgb(255, 102, 0), rgb(255, 208, 0));
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #f700ff;
+        }
+
+        .navbar .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none;
+                flex-direction: column;
+                background-color: #036d5b;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                width: 150px;
+                border-radius: 5px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                z-index: 100;
+                text-align: center;
+            }
+            .navbar ul li a:hover {
+            color: #ff00d4;
+        }
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .navbar ul.active {
+                display: flex;
+            }
+
+            .navbar .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+</head>
+    <div class="navbar">
+        <div class="logo">Sri Sri Gnan Mandir-Eral</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <!-- <li><a href="#admissions">Admissions</a></li> -->
+            <li><a href="cotact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </div>
+
+    <script>
+        // Toggle menu for smaller screens
+        const menuIcon = document.getElementById('menu-icon');
+        const navbarMenu = document.querySelector('.navbar ul');
+
+        menuIcon.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* margin: 20px; */
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .staff-section {
+            margin-bottom: 30px;
+        }
+        .staff-list {
+            list-style: none;
+            padding: 0;
+        }
+        .staff-list li {
+            margin: 5px 0;
+            padding: 8px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <h1>School Staff Directory</h1>
+
+    <div class="staff-section">
+        <h2>Teaching Staff</h2>
+        <ul class="staff-list">
+            <li>Goutam Das Adhikari - M.Sc (Bio), B.Ed - H.M.</li>
+            <li>Bibhas Chandra Rana - M.A. (Hist.), B.Ed. - A.T.</li>
+            <li>Malati Rani Pandit - B.A. (Beng.), D.LEd. - A.T.</li>
+            <li>Sucharita Adak - M.A. (Beng.), B.Ed. - A.T.</li>
+            <li>Laltu Bhanja - M.A. (Sans.), B.Ed. - A.T.</li>
+            <li>Bulti Bag - M.A. (Geo.), B.Ed. - A.T.</li>
+            <li>Sudip Raul - M.Sc (Math), B.Ed. - A.T.</li>
+            <li>Prasanta Samanta - M.A. (Eng.), B.Ed. - A.T.</li>
+            <li>Rupali Chakraborty - B.A. (H), D.LEd. - A.T.</li>
+            <li>Kalyani Ghorai Jana - B.A., D.LEd. - A.T.</li>
+            <li>Subrata Samanta - B.A., D.LEd. - A.T.</li>
+            <li>Mahua Bhowmik Paul - B.A. (Eng), D.LEd. - A.T.</li>
+            <li>Ganesh Das Adhikari - B.A. (Eng), D.LEd. - A.T.</li>
+            <li>Swapan Manna - H.S.(Trained on Bratachari com-art)</li>
+            <li>Anita Ojha Kar - H.S., D. LEd.</li>
+            <li>Prasenjit Mandal - Diploma in Computer</li>
+        </ul>
+    </div>
+
+    <div class="staff-section">
+        <h2>Guest Teaching Staff</h2>
+        <ul class="staff-list">
+            <li>Bishnupada Maikap - B.Com.</li>
+        </ul>
+    </div>
+
+    <div class="staff-section">
+        <h2>Non-Teaching Staff</h2>
+        <ul class="staff-list">
+            <li>Aparna Maiti - M.P. (Matron)</li>
+            <li>Sandhya Rani Gantait - VIII</li>
+            <li>Madhusudan Gantait - VIII</li>
+            <li>Biswajit Mandal - H.S</li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>

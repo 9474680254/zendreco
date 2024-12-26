@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Data Table</h1>
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Value</th>
+    </tr>
+    <tr><td>Village</td><td><?php echo $village; ?></td></tr>
+    <tr><td>District</td><td><?php echo $district; ?></td></tr>
+    <tr><td>State</td><td><?php echo $state; ?></td></tr>
+    <tr><td>Name of the Student</td><td><?php echo $name; ?></td></tr>
+    <tr><td>Email</td><td><?php echo $email; ?></td></tr>
+    <tr><td>Aadhar No</td><td><?php echo $aadhar; ?></td></tr>
+    <tr><td>Date of Birth</td><td><?php echo $dob; ?></td></tr>
+   
+    
+    <tr><td>Guardian's Name</td><td><?php echo $guardian_name; ?></td></tr>
+    <tr><td>Guardian's Aadhar No</td><td><?php echo $guardian_aadhar; ?></td></tr>
+    <tr><td>Nationality</td><td><?php echo $nationality; ?></td></tr>
+    <tr><td>Gender</td><td><?php echo $Gender; ?></td></tr>
+    <tr><td>Category</td><td><?php echo $category; ?></td></tr>
+   
+   
+    <tr><td>Guardian Mobile No</td><td><?php echo $guardian_mobile; ?></td></tr>
+    
+    <tr><td>Parent's Annual Income</td><td><?php echo $annual_income; ?></td></tr>
+    <tr><td>Previous School Name</td><td><?php echo $previous_school; ?></td></tr>
+    <tr><td>Percentage of Previous Class Mark</td><td><?php echo $percentage; ?></td></tr>
+    <tr><td>STS or TC No of Student</td><td><?php echo $sts_tc; ?></td></tr>
+    
+    <tr><td>Requesting Admission For</td><td><?php echo $admission_request; ?></td></tr>
+</table>
+
+</body>
+</html>

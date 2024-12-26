@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mast School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <style>
+        /* Basic styling for the navigation bar */
+       
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, rgb(255, 102, 0), rgb(255, 208, 0));
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #ffd700;
+        }
+
+        .navbar .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none;
+                flex-direction: column;
+                background-color: #036d5b;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                width: 150px;
+                border-radius: 5px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                z-index: 100;
+                text-align: center;
+            }
+            .navbar ul li a:hover {
+            color: #ff00d4;
+        }
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .navbar ul.active {
+                display: flex;
+            }
+
+            .navbar .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Sri Sri Gnan Mandir Eral</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </div>
+  
+    <script>
+        // Toggle menu for smaller screens
+        const menuIcon = document.getElementById('menu-icon');
+        const navbarMenu = document.querySelector('.navbar ul');
+
+        menuIcon.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+    <div class="container">
+        <header>
+            <h1>School Contact Details</h1>
+        </header>
+        
+        <section class="contact-details">
+            <h2>Our Contact Information</h2>
+            <ul>
+                <li><strong>Address:</strong> Sri Sri Gnan Mandir Eral, Uttra Eral, Sabang,Pachim medinipur,pin-721144</li>
+                <li><strong>Goutam Das Adhikary</strong></li>
+                <li><strong>Phone:</strong> +91 9593258263 </li>
+                <li><strong>Milan maikap</strong></li>
+                <li><strong>Phone:</strong> +91 9475329274</li>
+                <li><strong>Email:<a href="mailto:ssgmeral2025@gmail.com">ssgmeral2025@gmail.com</a></strong> </li>
+               
+            </ul>
+        </section>
+        
+        <section class="google-map">
+            <h2>Find Us on the Map</h2>
+            <!-- Embed Google Map -->
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.6934547183387!2d87.59499137599123!3d22.175737847397446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02cb1a693af439%3A0x87836f6890ccce26!2sSri%20Sri%20Gnan%20Mandir%20Eral!5e0!3m2!1sen!2sin!4v1734505410776!5m2!1sen!2sin" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+    </div>
+    <style>
+
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+/* Container for content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(118, 236, 252);
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Contact details */
+.contact-details {
+    margin-bottom: 40px;
+}
+
+.contact-details h2 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.contact-details ul {
+    list-style-type: none;
+}
+
+.contact-details li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-details li strong {
+    font-weight: bold;
+}
+
+.contact-details a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Google map section */
+.google-map {
+    text-align: center;
+}
+
+.google-map h2 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+}
+
+    </style>
+</body>
+</html>
